@@ -36,37 +36,37 @@ From the data set in previous step, independent tidy data set is created with th
 
 Following are the transformations that were performed on the input dataset:
 
-X_train.txt is read into Train.x.
-y_train.txt is read into Train.y.
-subject_train.txt is read into Train.Subject.
-X_test.txt is read into Test.x.
-y_test.txt is read into Test.y.
-subject_test.txt is read into Test.Subject.
-features.txt is read into Names.x.
-activity_labels.txt is read into Labels.y.
+* X_train.txt is read into Train.x.
+* y_train.txt is read into Train.y.
+* subject_train.txt is read into Train.Subject.
+* X_test.txt is read into Test.x.
+* y_test.txt is read into Test.y.
+* subject_test.txt is read into Test.Subject.
+* features.txt is read into Names.x.
+* activity_labels.txt is read into Labels.y.
 
-The subjects in training and test set data are merged to form Subject.
-The activities in training and test set data are merged to form Activity.
-The features of test and training are merged to form Features.
-The name of the features are set in features from Names.x.
+The subjects in training and test set data are merged to form __Subject__.
+The activities in training and test set data are merged to form __Activity__.
+The features of test and training are merged to form __Features__.
+The name of the features are set in features from __Names.x__.
 
-Features, Activity and Subject are merged into TotalData.
+__Features__, __Activity__ and __Subject__ are merged into TotalData.
 
 Indexes of columns that contain standard deviation or mean, activity and subject are taken into ColMeanStd.Init .
 SubsetData is created with data from columns in ColMeanStd.Init.
 Activity column in SubsetData is updated with descriptive names of activities taken from Labels.y. Activity column is expressed as a factor variable.
 
 Acronyms in variable names in SubsetData, are replaced with descriptive labels:
-Acc was replaced with Accelerometer
-Gyro was replaced with Gyroscope
-BodyBody was replaced with Body
-Mag was replaced with Magnitude
-Character f was replaced with Frequency
-Character t was replaced with Time
+* Acc was replaced with Accelerometer
+* Gyro was replaced with Gyroscope
+* BodyBody was replaced with Body
+* Mag was replaced with Magnitude
+* Character __f__ was replaced with Frequency
+* Character __t__ was replaced with Time
 
 FinalData is created as a set with average for each activity and subject of SubsetData. 
 Entries in FinalData are ordered based on activity and subject.
 
 ## Tidy data set
 
-The tidy data set from FinalData is exported to tidy_data.txt where the first row is the header containing the names for each column.
+The tidy data set from FinalData is exported to *tidy_data.txt* where the first row is the header containing the names for each column.
