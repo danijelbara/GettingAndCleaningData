@@ -54,9 +54,10 @@ __Features__, __Activity__ and __Subject__ are merged into TotalData.
 
 Indexes of columns that contain standard deviation or mean, activity and subject are taken into ColMeanStd.Init.
 SubsetData is created with data from columns in ColMeanStd.Init.
-Activity column in SubsetData is updated with descriptive names of activities taken from Labels.y. 
+Activity column in SubsetData is updated with descriptive names of activities taken from Labels.y.
 
-Acronyms in variable names in SubsetData, are replaced with descriptive labels:
+Acronyms in variable names in SubsetData, are replaced with descriptive labels based on explanation from README.txt file of the project:
+
 * Acc was replaced with Accelerometer
 * Gyro was replaced with Gyroscope
 * BodyBody was replaced with Body
@@ -64,7 +65,7 @@ Acronyms in variable names in SubsetData, are replaced with descriptive labels:
 * Character __f__ was replaced with Frequency
 * Character __t__ was replaced with Time
 
-FinalData is created as a set with mean for each activity and subject of SubsetData. 
+FinalData is created as a set with mean for each activity and subject of SubsetData, and *.mean* suffix is added to columns.  
 
 ## Tidy data set
 
