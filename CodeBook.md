@@ -52,9 +52,9 @@ The name of the features are set in features from __Names.x__.
 
 __Features__, __Activity__ and __Subject__ are merged into TotalData.
 
-Indexes of columns that contain standard deviation or mean, activity and subject are taken into ColMeanStd.Init .
+Indexes of columns that contain standard deviation or mean, activity and subject are taken into ColMeanStd.Init.
 SubsetData is created with data from columns in ColMeanStd.Init.
-Activity column in SubsetData is updated with descriptive names of activities taken from Labels.y. Activity column is expressed as a factor variable.
+Activity column in SubsetData is updated with descriptive names of activities taken from Labels.y. 
 
 Acronyms in variable names in SubsetData, are replaced with descriptive labels:
 * Acc was replaced with Accelerometer
@@ -64,8 +64,7 @@ Acronyms in variable names in SubsetData, are replaced with descriptive labels:
 * Character __f__ was replaced with Frequency
 * Character __t__ was replaced with Time
 
-FinalData is created as a set with average for each activity and subject of SubsetData. 
-Entries in FinalData are ordered based on activity and subject.
+FinalData is created as a set with mean for each activity and subject of SubsetData. 
 
 ## Tidy data set
 
